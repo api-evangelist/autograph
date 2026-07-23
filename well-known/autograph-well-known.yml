@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: probed /.well-known/ on autograph.io and api.autograph.io
+hosts:
+- https://autograph.io
+- https://api.autograph.io
+documents:
+- path: /.well-known/security.txt
+  host: https://autograph.io
+  status: 404
+- path: /.well-known/security.txt
+  host: https://api.autograph.io
+  status: 404
+- path: /.well-known/openid-configuration
+  host: https://autograph.io
+  status: 404
+- path: /.well-known/openid-configuration
+  host: https://api.autograph.io
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  host: https://autograph.io
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  host: https://api.autograph.io
+  status: 404
+- path: /.well-known/api-catalog
+  host: https://autograph.io
+  status: 404
+- path: /.well-known/api-catalog
+  host: https://api.autograph.io
+  status: 404
+- path: /.well-known/ai-plugin.json
+  host: https://autograph.io
+  status: 404
+- path: /.well-known/ai-plugin.json
+  host: https://api.autograph.io
+  status: 404
+notes: No well-known discovery documents published on either host as of 2026-07-18; empty is a valid result
+  for this consumer platform with no public API program.

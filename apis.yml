@@ -1,8 +1,23 @@
 aid: autograph
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/autograph.png
 name: Autograph
-description: Autograph is a company surfaced as a portfolio company of a16z, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Autograph is a fan engagement and digital collectibles platform co-founded by Tom Brady and
+  operated by LFG NFTs Corp. It recognizes and rewards fans by turning their passion for athletes, artists,
+  and celebrities into access, experiences, and exclusive rewards. The platform consolidates fan communities
+  and content into a single app, using web3 and NFT technology to let creators and public figures collaborate
+  directly with their supporters. Autograph is a consumer product with no public developer API program at
+  this time; api.autograph.io serves the app backend and docs.autograph.io is a private GitBook.
 url: https://raw.githubusercontent.com/api-evangelist/autograph/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,12 +28,40 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Fan Engagement
+- Digital Collectibles
+- NFT
+- Web3
+- Sports
+- Entertainment
+- Blockchain
+- Consumer
 apis: []
+common:
+- type: DomainSecurity
+  url: security/autograph-domain-security.yml
+- type: WellKnown
+  url: well-known/autograph-well-known.yml
+- type: Website
+  url: https://autograph.io
+- type: Blog
+  url: https://autograph.io/blog
+- type: SignUp
+  url: https://autograph.io/login
+- type: TermsOfService
+  url: https://terms.autograph.io/tos.pdf
+- type: PrivacyPolicy
+  url: https://terms.autograph.io/privacy.pdf
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
